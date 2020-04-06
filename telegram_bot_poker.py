@@ -7,6 +7,7 @@ import logging
 from fractions import Fraction
 
 from poker import poker
+from keys import API_token_telegram_poker_bot as bot_token
 
 pkr = poker()
 
@@ -14,7 +15,7 @@ pkr = poker()
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 
 # define the bot updater
-my_token = '1129053883:AAH0i7EPiUsC90LeIKa_exii1df8hak_-VI'
+my_token = bot_token
 updater = Updater(token=my_token, use_context=True)
 
 # create the dispatcher locally

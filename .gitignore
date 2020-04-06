@@ -127,4 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Max window settings
 .DS_Store
+
+# Other
+keys.py
